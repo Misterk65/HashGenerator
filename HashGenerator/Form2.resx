@@ -117,16 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 21</value>
-  </metadata>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>273, 21</value>
-  </metadata>
-  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>157, 17</value>
-  </metadata>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>370, 21</value>
-  </metadata>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Hash einer Datei erstellen
+1. Die zu bearbeitende Datei mit Klick on "..." laden
+2. Wenn die Datei geladen ist, mit Klick auf "Calculate" die Werte fuer MD5und SHA256 berechnen
+3. Mit den Buttons neben den Werten, koennen diese in die Zwischenablage 
+    kopiert werden.
+
+Hashing a file
+1. Load the file by clicking on "..."
+2. If the file is loaded, click on "Calculate" to get the values for MD5 and SHA256 calculated.
+3. With the button besides each value the line content can be put into the clipboard for further processing.
+    
+</value>
+  </data>
 </root>

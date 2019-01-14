@@ -46,14 +46,19 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabelVer = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnOpenFile
             // 
             this.btnOpenFile.AutoSize = true;
             this.btnOpenFile.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnOpenFile.Location = new System.Drawing.Point(448, 9);
+            this.btnOpenFile.Location = new System.Drawing.Point(447, 37);
             this.btnOpenFile.Name = "btnOpenFile";
             this.btnOpenFile.Size = new System.Drawing.Size(26, 23);
             this.btnOpenFile.TabIndex = 0;
@@ -63,7 +68,7 @@
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(480, 9);
+            this.btnCalculate.Location = new System.Drawing.Point(479, 37);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(75, 23);
             this.btnCalculate.TabIndex = 1;
@@ -78,7 +83,7 @@
             // lblFile
             // 
             this.lblFile.AutoSize = true;
-            this.lblFile.Location = new System.Drawing.Point(12, 9);
+            this.lblFile.Location = new System.Drawing.Point(11, 37);
             this.lblFile.Name = "lblFile";
             this.lblFile.Size = new System.Drawing.Size(23, 13);
             this.lblFile.TabIndex = 2;
@@ -86,14 +91,14 @@
             // 
             // txtFile
             // 
-            this.txtFile.Location = new System.Drawing.Point(66, 9);
+            this.txtFile.Location = new System.Drawing.Point(65, 37);
             this.txtFile.Name = "txtFile";
             this.txtFile.Size = new System.Drawing.Size(376, 20);
             this.txtFile.TabIndex = 3;
             // 
             // txtMd5
             // 
-            this.txtMd5.Location = new System.Drawing.Point(66, 35);
+            this.txtMd5.Location = new System.Drawing.Point(65, 63);
             this.txtMd5.Name = "txtMd5";
             this.txtMd5.Size = new System.Drawing.Size(376, 20);
             this.txtMd5.TabIndex = 6;
@@ -101,7 +106,7 @@
             // lblMd5
             // 
             this.lblMd5.AutoSize = true;
-            this.lblMd5.Location = new System.Drawing.Point(12, 35);
+            this.lblMd5.Location = new System.Drawing.Point(11, 63);
             this.lblMd5.Name = "lblMd5";
             this.lblMd5.Size = new System.Drawing.Size(30, 13);
             this.lblMd5.TabIndex = 5;
@@ -109,7 +114,7 @@
             // 
             // txtSha256
             // 
-            this.txtSha256.Location = new System.Drawing.Point(66, 61);
+            this.txtSha256.Location = new System.Drawing.Point(65, 89);
             this.txtSha256.Name = "txtSha256";
             this.txtSha256.Size = new System.Drawing.Size(376, 20);
             this.txtSha256.TabIndex = 8;
@@ -117,7 +122,7 @@
             // lblSha256
             // 
             this.lblSha256.AutoSize = true;
-            this.lblSha256.Location = new System.Drawing.Point(12, 61);
+            this.lblSha256.Location = new System.Drawing.Point(11, 89);
             this.lblSha256.Name = "lblSha256";
             this.lblSha256.Size = new System.Drawing.Size(47, 13);
             this.lblSha256.TabIndex = 7;
@@ -125,7 +130,7 @@
             // 
             // btnCopyToClipMd5
             // 
-            this.btnCopyToClipMd5.Location = new System.Drawing.Point(448, 35);
+            this.btnCopyToClipMd5.Location = new System.Drawing.Point(447, 63);
             this.btnCopyToClipMd5.Name = "btnCopyToClipMd5";
             this.btnCopyToClipMd5.Size = new System.Drawing.Size(107, 23);
             this.btnCopyToClipMd5.TabIndex = 9;
@@ -135,7 +140,7 @@
             // 
             // btnCopyToClipSha
             // 
-            this.btnCopyToClipSha.Location = new System.Drawing.Point(448, 61);
+            this.btnCopyToClipSha.Location = new System.Drawing.Point(447, 89);
             this.btnCopyToClipSha.Name = "btnCopyToClipSha";
             this.btnCopyToClipSha.Size = new System.Drawing.Size(107, 23);
             this.btnCopyToClipSha.TabIndex = 10;
@@ -162,7 +167,7 @@
             this.toolStripStatusLabel1,
             this.toolStripStatusfilePath,
             this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 99);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 119);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(564, 22);
             this.statusStrip1.TabIndex = 11;
@@ -171,7 +176,7 @@
             // toolStripStatusLabelVer
             // 
             this.toolStripStatusLabelVer.Name = "toolStripStatusLabelVer";
-            this.toolStripStatusLabelVer.Size = new System.Drawing.Size(46, 17);
+            this.toolStripStatusLabelVer.Size = new System.Drawing.Size(45, 17);
             this.toolStripStatusLabelVer.Text = "Version";
             // 
             // toolStripStatusLabel2
@@ -179,12 +184,46 @@
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(0, 17);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exitToolStripMenuItem,
+            this.helpToolStripMenuItem,
+            this.aboutToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(564, 24);
+            this.menuStrip1.TabIndex = 12;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "&Help";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.exitToolStripMenuItem.Text = "&Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.aboutToolStripMenuItem.Text = "&About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(564, 121);
+            this.ClientSize = new System.Drawing.Size(564, 141);
             this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.btnCopyToClipSha);
             this.Controls.Add(this.btnCopyToClipMd5);
             this.Controls.Add(this.txtSha256);
@@ -195,12 +234,14 @@
             this.Controls.Add(this.lblFile);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.btnOpenFile);
-            this.MaximumSize = new System.Drawing.Size(580, 160);
+            this.MaximumSize = new System.Drawing.Size(580, 180);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,6 +266,10 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelVer;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
     }
 }
 

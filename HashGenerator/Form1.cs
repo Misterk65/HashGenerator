@@ -49,12 +49,6 @@ namespace HashGenerator
             return result;
         }
 
-        // Compute the file's hash code.
-        private void BtnHash_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private byte[] GetHashMD5(string filename)
         {
             using (FileStream stream = File.OpenRead(filename))
@@ -70,6 +64,8 @@ namespace HashGenerator
 
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
+                txtMd5.Text = "";
+                txtSha256.Text = "";
                 openFileDialog.InitialDirectory = "c:\\";
                 openFileDialog.Filter = "Zip files (*.zip)|*.txt|All files (*.*)|*.*";
                 openFileDialog.FilterIndex = 2;
@@ -150,6 +146,24 @@ namespace HashGenerator
             string version = fvi.FileVersion;
             version = version.Substring(0, version.Length - 2);
             return version;
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            this.Dispose();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutBox1 about = new AboutBox1();
+            about.ShowDialog();
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 frm2 =new Form2();
+            frm2.ShowDialog();
         }
     }
 }
