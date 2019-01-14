@@ -73,7 +73,6 @@ namespace HashGenerator
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    //Get the path of specified file
                     filePath = openFileDialog.FileName;
                     txtFile.Text = openFileDialog.FileName;
                     toolStripStatusfilePath.Text = filePath;
@@ -85,14 +84,6 @@ namespace HashGenerator
                                                        cropPath[1] + "\\...\\" + 
                                                        cropPath[cropPath.Length - 1];
                     }
-
-                    /*Read the contents of the file into a stream
-                    var fileStream = openFileDialog.OpenFile();
-
-                    using (StreamReader reader = new StreamReader(fileStream))
-                    {
-                        fileContent = reader.ReadToEnd();
-                    }*/
                 }
             }
         }
